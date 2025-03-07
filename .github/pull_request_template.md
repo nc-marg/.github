@@ -17,6 +17,15 @@
 ## 📋 PR Checklist
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 
+### IMPLEMENTATION
+- [ ] Component has right architecture
+  - [ ] Is server side rendered if can be implemented without JavaScript usage
+  - [ ] Is client side rendered if can't be implemented without hooks or event listeners
+- [ ] Page has right architecture
+  - [ ] Can be rendered as static site, If does not require runtime data (like request params etc) and JavaScript usage
+- [ ] Responsiveness is made without JS usage - only via Tailwind usage or custom CSS implementation
+- [ ] Client Components that handles logic via JavaScript cann't be replaced by solutions that not involves JS like redirection with Link instead of button or expanding section with details element instead of custom client component
+
 ### Testing
 - [ ] I have added tests to cover my changes
 - [ ] I have considered how my changes can affect other parts of the system, and tested those areas
